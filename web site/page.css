@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(img/pexels-scottwebb-1048039.jpg);
+    background-size: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* تأثير ظل */
+}
+
+
+
+/* Section Styling */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 18vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo {
+    background-color: #fff;
+    max-width: 100px;
+    border-radius: 80%;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s; /* تأثير تغيير اللون */
+    
+}
+
+header ul li a:hover {
+    color: #0056b3; /* تغيير اللون عند التمرير */
+}
+
+header ul li a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #0056b3;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+header ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex:1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+}
+
+.footer-section p, 
+.footer-section ul, 
+.footer-section li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f4f4f4;
+}
+
+.footer-section.social ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-section.social ul li {
+    margin-right: 20px;
+}
+
+.footer-section.social ul li a {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+#sou {
+    width: 50px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* About Me Section */
+.about-me {
+    padding: 50px 0;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #007BFF;
+}
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #007BFF;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+}
+

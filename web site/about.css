@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(img/pexels-scottwebb-1048039.jpg);
+    background-size: cover; /* جعل الخلفية تغطي الصفحة */
+}
+
+/* About Me Section */
+.about-me {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.5); /* خلفية شبه شفافة */
+    border-radius: 10px; /* إضافة انحناء للزوايا */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex; /* استخدام الفليكس لتوسيع المساحة */
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* جعل العناصر عمودية */
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px; /* مسافة بين الصورة والمحتوى */
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 200px; /* تقليل حجم الصورة */
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+}
+
+.about-content {
+    text-align: center; /* توسيط النص */
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #007BFF;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px; /* تحديد عرض النص */
+    line-height: 1.8; /* زيادة ارتفاع السطر لجعل النص أكثر قابلية للقراءة */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/pexels-scottwebb-1048039.jpg);
+    background-size: cover;
+}
+
+fieldset {
+    background-color: rgba(0, 0, 0, 0.3); /* لون خلفية شبه شفاف */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px; /* زيادة المسافة بين العناصر */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+    border-color: #007BFF;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 48%; /* تأمين مساحة كافية بين الأزرار */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between; /* تباعد بين الأزرار */
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* تحسينات على التباعد */
+br {
+    line-height: 2;
+}
